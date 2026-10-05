@@ -34,7 +34,7 @@ jobs:
       - run: terraform fmt -check -recursive ../..
       - run: terraform init -input=false
       - run: terraform validate
-      - run: terraform plan -input=fa;se -out=tfplan
+      - run: terraform plan -input=false -out=tfplan
 
       - name: Plan summary
         run: |
