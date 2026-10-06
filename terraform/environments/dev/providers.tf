@@ -28,7 +28,7 @@ locals {
 }
 
 provider "helm" {
-  kubernetes {
+  kubernetes = {
     host                   = local.kubeconfig.clusters[0].cluster.server
     cluster_ca_certificate = base64encode(local.kubeconfig.clusters[0].cluster["certificate-authority-data"])
     client_ca_certificate  = base64encode(local.kubeconfig.users[0].user["client-certificate-data"])
