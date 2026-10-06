@@ -26,8 +26,8 @@ module "kubernetes" {
 module "argocd" {
   source = "../../modules/argocd"
 
-  repo_url = var.gitops_repo_url
-  path = "kubernetes/clusters/${var.environment}"
-  argocd_chart_version = var.argocd_chart_version
+  repo_url                  = var.gitops_repo_url
+  path                      = "kubernetes/clusters/${var.environment}"
+  argocd_chart_version      = var.argocd_chart_version
   argocd_apps_chart_version = var.argocd_apps_chart_version
 }

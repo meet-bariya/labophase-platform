@@ -1,15 +1,15 @@
 variable "path" {
-    type = string
+  type = string
 }
 
 variable "argocd_chart_version" {
-    type = string
+  type = string
 }
 
 variable "argocd_apps_chart_version" {
-    type = string
+  type = string
 }
 
 variable "prepo_url" {
-    type = string
+  type = string
 }
