@@ -23,3 +23,15 @@ variable "node_size" {
 variable "node_count" {
   type = number
 }
+
+variable "gitops_repo_url" {
+  type = string
+}
+
+variable "argocd_chart_version" {
+  type = string
+}
+
+variable "argocd_apps_chart_version" {
+  type = string
+}
