@@ -10,6 +10,6 @@ variable "argocd_apps_chart_version" {
   type = string
 }
 
-variable "prepo_url" {
+variable "repo_url" {
   type = string
 }
