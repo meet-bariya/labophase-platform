@@ -2,3 +2,4 @@
 kind: Kustomization
 resources:
   - apps.yaml
+  - envoy-gateway.yaml
